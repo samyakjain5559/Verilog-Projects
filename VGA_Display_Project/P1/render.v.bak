@@ -1,0 +1,38 @@
+//This module is supposed to render all the graphics to the vga output
+//Also note that it is RGB not bgr
+
+module render(
+	input clk, reset,
+	input sw,
+	input video_on,
+	input square_on,
+	input [11:0]clr,
+	output [11:0]rgb
+	);
+	
+	reg [11:0] rgb_reg;
+
+	
+	localparam H_ACTIVE	= 640;
+	localparam V_ACTIVE	= 480;
+	
+	
+	//This posedge might be delaying the x,y to 1 pixel error
+	//Please note that (posedge reset) logic is not working
+	//Also note that it is RGB
+	always @(*)
+	begin
+//	if (!reset)
+//		rgb_reg <= 0;//black screen or start screen?
+//	else
+		//begin
+		if(square_on)
+			rgb_reg <= 12'b000011110000; //red
+		else
+			rgb_reg <= 12'b111111111111;
+		//end
+	end
+	
+	assign rgb = (video_on) ? rgb_reg : 8'b0;
+	
+endmodule

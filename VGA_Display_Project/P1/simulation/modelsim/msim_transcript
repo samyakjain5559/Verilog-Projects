@@ -1,0 +1,103 @@
+# Reading pref.tcl
+# do P1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Kamal\ Patel/Desktop/Pong_game-master/Pong_game-master {C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/vga_sync.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:39:26 on Feb 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master" C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/vga_sync.v 
+# -- Compiling module vga_sync
+# 
+# Top level modules:
+# 	vga_sync
+# End time: 16:39:26 on Feb 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Kamal\ Patel/Desktop/Pong_game-master/Pong_game-master {C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:39:26 on Feb 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master" C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/top.v 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 16:39:26 on Feb 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Kamal\ Patel/Desktop/Pong_game-master/Pong_game-master {C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/render.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:39:26 on Feb 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master" C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/render.v 
+# -- Compiling module render
+# 
+# Top level modules:
+# 	render
+# End time: 16:39:26 on Feb 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work {C:/Users/Kamal Patel/Desktop/Pong_game-master/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:40:01 on Feb 28,2021
+# vlog -reportprogress 300 -work work C:/Users/Kamal Patel/Desktop/Pong_game-master/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 16:40:01 on Feb 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master} {C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/render.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:40:07 on Feb 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master" C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/render.v 
+# -- Compiling module render
+# 
+# Top level modules:
+# 	render
+# End time: 16:40:07 on Feb 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master} {C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:40:08 on Feb 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master" C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/top.v 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 16:40:08 on Feb 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master} {C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/vga_sync.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:40:08 on Feb 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master" C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/vga_sync.v 
+# -- Compiling module vga_sync
+# 
+# Top level modules:
+# 	vga_sync
+# End time: 16:40:08 on Feb 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb
+# vsim work.tb 
+# Start time: 16:40:11 on Feb 28,2021
+# Loading work.tb
+# Loading work.top
+# Loading work.vga_sync
+# Loading work.render
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 't'.  Expected 5, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /tb/t File: C:/Users/Kamal Patel/Desktop/Pong_game-master/tb.v Line: 10
+# ** Warning: (vsim-3722) C:/Users/Kamal Patel/Desktop/Pong_game-master/tb.v(10): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'v1'.  Expected 8, found 6.
+#    Time: 0 ns  Iteration: 0  Instance: /tb/t/v1 File: C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/top.v Line: 16
+# ** Warning: (vsim-3722) C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/top.v(16): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3722) C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/top.v(16): [TFMPC] - Missing connection for port 'p_tick'.
+add wave sim:/tb/*
+run
+run
+# Break key hit
+# Break in Module vga_sync at C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/vga_sync.v line 69
+# End time: 17:25:28 on Feb 28,2021, Elapsed time: 0:45:17
+# Errors: 0, Warnings: 5

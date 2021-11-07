@@ -1,0 +1,50 @@
+module sync(input pclk, output hsync, vsync, output reg [9:0] row, col, output );
+
+localparam
+	H_DISPLAY = 640,
+	H_FRONT_PORCH = 16,
+	H_BACK_PORCH = 48,
+	H_SYNC_PULSE = 96;
+	
+localparam
+	V_DISPLAY = 480,
+	V_FRONT_PORCH = 10,
+	V_BACK_PORCH = 33,
+	V_SYNC_PULSE = 2;
+	
+	
+wire hsync_done, vsync_done;
+
+
+assign hsync_done = (row == (H_DISPLAY + H_FRONT_PORCH + H_BACK_PORCH + H_SYNC_PULSE));
+assign vsync_done = (col == (V_DISPLAY + V_FRONT_PORCH + V_BACK_PORCH + V_SYNC_PULSE));
+
+always @(pclk)
+begin
+	if(hsync_done)
+	begin
+		row <= 10'd0;
+		if(vsync_done)
+			col <= 10'd0;
+		else
+			col <= col + 10'd1;
+	end
+	else
+		row <= row + 10'd1;
+	
+end
+
+
+always @*
+begin
+	
+
+
+end
+
+
+
+
+
+
+endmodule

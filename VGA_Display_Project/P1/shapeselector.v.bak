@@ -1,0 +1,75 @@
+module shapeselector(input[9:0] x, y,
+				output square_on,
+				input fkey,input bkey);
+
+reg so;
+reg [1:0] shapeSel = 2'd0;
+integer temp = 0;
+reg rec_on;
+reg[31:0] fshapecounter = 32'd0;
+reg[31:0] bshapecounter = 32'd0;
+
+localparam
+	centerX = 320,
+	centerY = 240,
+	radius = 100;
+
+localparam
+	RECT = 0,
+	SQUARE = 1,
+	CIRCLE = 2,
+	TRIANGLE = 3;
+
+//triangle sides
+localparam
+	SAx = (centerX - 50), SAy = (centerY + 100),
+	SBx = (centerX + 50), SBy = (centerY + 100),
+	SCx = centerX, SCy = (centerY - 100);
+
+always @(*)
+begin
+   if(fkey == 0)
+	begin
+	  fshapecounter = fshapecounter + 32'd1;
+	  bshapecounter = 32'd0;
+	end
+	else if(bkey == 0)
+	begin
+	  bshapecounter = bshapecounter + 32'd1;
+	  fshapecounter = 32'd0;
+	end
+	else if(fkey == 1 && fshapecounter > 0)
+	begin
+	   fshapecounter = 32'd0;
+		bshapecounter = 32'd0;
+	   shapeSel = shapeSel + 2'd1;
+	end
+	else if(bkey == 1 && bshapecounter > 0)
+	begin
+	   bshapecounter = 32'd0;
+		fshapecounter = 32'd0;
+	   shapeSel = shapeSel + 2'd1;
+	end
+	
+   if(shapeSel == RECT)
+	  rec_on = (x >= (centerX-150) && x <= (centerX+150)) && (y>= (centerY-100) && y <= (centerY+100)) ?1:0;
+	else if(shapeSel == SQUARE)
+	  rec_on = (x >= (centerX-150) && x <= (centerX+150)) && (y>= (centerY-150) && y <= (centerY+150)) ?1:0;
+	else if(shapeSel == CIRCLE)
+	begin
+		temp = ((x - centerX) * (x - centerX)) + ((y - centerY) * (y - centerY));
+		rec_on = temp <= (radius * radius);
+	end
+	else if(shapeSel == TRIANGLE)
+	begin
+		
+	
+	end
+	//else
+	 
+	  //rec_on = (x>0 && x < 480) && (y>0 && y < 200) ?1:0;
+end
+
+assign square_on = rec_on;
+
+endmodule 

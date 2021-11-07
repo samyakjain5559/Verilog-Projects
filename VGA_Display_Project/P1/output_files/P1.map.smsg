@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at render.v(13): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/20.1/project/FinalP1/P1/render.v Line: 13

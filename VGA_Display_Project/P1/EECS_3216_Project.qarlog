@@ -1,0 +1,18 @@
+Quartus Prime Archive log --	C:/intelFPGA_lite/20.1/project/FinalP1/P1/EECS_3216_Project.qarlog
+
+Archive:	C:/intelFPGA_lite/20.1/project/FinalP1/P1/EECS_3216_Project.qar
+Date:		Mon Apr 12 21:05:33 2021
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/intelFPGA_lite/20.1/project/FinalP1/P1/P1.qpf
+C:/intelFPGA_lite/20.1/project/FinalP1/P1/P1.qsf
+C:/intelFPGA_lite/20.1/project/FinalP1/P1/P1_assignment_defaults.qdf
+C:/intelFPGA_lite/20.1/project/FinalP1/P1/render.v
+C:/intelFPGA_lite/20.1/project/FinalP1/P1/shapeselector.v
+C:/intelFPGA_lite/20.1/project/FinalP1/P1/sync.v
+C:/intelFPGA_lite/20.1/project/FinalP1/P1/top.v
+	======= Total: 7 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

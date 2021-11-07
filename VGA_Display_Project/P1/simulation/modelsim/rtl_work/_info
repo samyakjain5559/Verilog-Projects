@@ -1,0 +1,106 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Kamal Patel/Desktop/Pong_game-master/simulation/modelsim
+vrender
+!s110 1614552007
+!i10b 1
+!s100 dl4F<TOKVmkz;8WInaW330
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I:bKCYXi2WdFQP01m[8Hi=3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1614551600
+8C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/render.v
+FC:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/render.v
+!i122 6
+L0 4 29
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1614552007.000000
+!s107 C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/render.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master|C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/render.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master}
+Z6 tCvgOpt 0
+vtb
+!s110 1614552001
+!i10b 1
+!s100 S>mOi<z`;W:GbhkjWj>P[3
+R1
+IMd;gj[6<ohbT;5Kh0c>0R1
+R2
+R0
+w1614551903
+8C:/Users/Kamal Patel/Desktop/Pong_game-master/tb.v
+FC:/Users/Kamal Patel/Desktop/Pong_game-master/tb.v
+!i122 5
+L0 4 24
+R3
+r1
+!s85 0
+31
+!s108 1614552001.000000
+!s107 C:/Users/Kamal Patel/Desktop/Pong_game-master/tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Kamal Patel/Desktop/Pong_game-master/tb.v|
+!i113 1
+o-work work
+R6
+vtop
+Z7 !s110 1614552008
+!i10b 1
+!s100 bzNa5hc_4B8;D=<UJE3LX1
+R1
+IhzQL]SZY]:XRKfbfhL8S>1
+R2
+R0
+w1614549831
+8C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/top.v
+FC:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/top.v
+!i122 7
+L0 3 21
+R3
+r1
+!s85 0
+31
+Z8 !s108 1614552008.000000
+!s107 C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master|C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/top.v|
+!i113 1
+R4
+R5
+R6
+vvga_sync
+R7
+!i10b 1
+!s100 [RKai4BciPMjSiN[Vn[[O3
+R1
+I4Gn>2^aD4;XbO9n_mZi8S1
+R2
+R0
+w1579812605
+8C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/vga_sync.v
+FC:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/vga_sync.v
+!i122 8
+L0 2 134
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/vga_sync.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master|C:/Users/Kamal Patel/Desktop/Pong_game-master/Pong_game-master/vga_sync.v|
+!i113 1
+R4
+R5
+R6

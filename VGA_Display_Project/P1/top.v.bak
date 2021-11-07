@@ -1,0 +1,27 @@
+//Limits might get cut sometimes. If that happens click on Auto Adjust.
+
+module top (
+	input clk, reset, sw,
+	output [11:0] rgb,
+	output hsync, vsync
+	);
+	
+	
+	wire [9:0] x,y;
+	
+	wire video_on;
+	wire clk_1ms;
+	wire clr;
+	wire square_on;
+	
+	vga_sync v1	(.clk(clk), .hsync(hsync), .vsync(vsync), .x(x), .y(y), .video_on(video_on));
+	
+	render r1	(.clk(clk), .reset(reset), .sw(sw), .video_on(video_on), .square_on(square_on), .clr(clr), .rgb(rgb));
+	
+	color clr1 (.clk_1ms(clk_1ms), .x(x), .y(y), .square_on(square_on), .clr(clr));
+	
+	clock_divider c1 (.clk(clk), .clk_1ms(clk_1ms));
+	
+	
+endmodule
+

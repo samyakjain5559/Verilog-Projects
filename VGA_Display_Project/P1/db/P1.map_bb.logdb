@@ -1,0 +1,13 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,shapeselector:ss1|lpm_mult:Mult6|mult_9rs:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,shapeselector:ss1|lpm_mult:Mult7|mult_0qs:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,shapeselector:ss1|lpm_mult:Mult2|mult_0qs:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,shapeselector:ss1|lpm_mult:Mult5|mult_0qs:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,shapeselector:ss1|lpm_mult:Mult4|mult_0qs:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,shapeselector:ss1|lpm_mult:Mult0|mult_fgs:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,shapeselector:ss1|lpm_mult:Mult1|mult_fgs:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,shapeselector:ss1|lpm_mult:Mult7|mult_0qs:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,shapeselector:ss1|lpm_mult:Mult6|mult_9rs:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,shapeselector:ss1|lpm_mult:Mult2|mult_0qs:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,shapeselector:ss1|lpm_mult:Mult5|mult_0qs:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,shapeselector:ss1|lpm_mult:Mult4|mult_0qs:auto_generated|mac_out4,
